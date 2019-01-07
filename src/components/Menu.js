@@ -44,29 +44,30 @@ export default function Menu({ onItemSelected }) {
                 </Text>
                 </TouchableOpacity>
 
-                <View style={{flex:1, backgroundColor:COLOR.purple, justifyContent:"center"}}>
+                <TouchableOpacity style={{flex:1, backgroundColor:COLOR.purple, justifyContent:"center"}}
+                onPress={() => onItemSelected('AnimatedMarkers')}>
                 <Text style={styles.text}>
                 Områder
                 </Text>
-                </View>
+                </TouchableOpacity>
 
-                <View style={{flex:1, backgroundColor:COLOR.red, justifyContent:"center"}}>
+                <TouchableOpacity style={{flex:1, backgroundColor:COLOR.red, justifyContent:"center"}}>
                 <Text style={styles.text}>
                 A-Å
                 </Text>
-                </View>
+                </TouchableOpacity>
 
-                <View style={{flex:1, backgroundColor:COLOR.blueGreen, justifyContent:"center"}}>
+                <TouchableOpacity style={{flex:1, backgroundColor:COLOR.blueGreen, justifyContent:"center"}}>
                 <Text style={styles.text}>
                 Transport
                 </Text>
-                </View>
+                </TouchableOpacity>
 
-                <View style={{flex:1, backgroundColor:COLOR.lightBlue, justifyContent:"center"}}>
+                <TouchableOpacity style={{flex:1, backgroundColor:COLOR.lightBlue, justifyContent:"center"}}>
                 <Text style={styles.text}>
                 Info
                 </Text>
-                </View>
+                </TouchableOpacity>
     </View>
   );
 }

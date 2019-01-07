@@ -12,5 +12,9 @@ target 'Indenfor10Minutter' do
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
   
+  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
 end
 

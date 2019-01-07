@@ -7,9 +7,6 @@ import Menu from '../components/Menu';
 // const COLOR = require('../assets/colors');
 
 export default class Within10Minutes extends Component {
-
-
-
   constructor(props) {
     super(props);
 

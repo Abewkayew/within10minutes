@@ -106,6 +106,7 @@ android {
         applicationId "com.indenfor10minutter"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         ndk {
@@ -143,6 +144,10 @@ android {
 
 configurations.all {exclude group: 'com.android.support', module: 'support-v4'}
 dependencies {
+    compile project(':react-native-vector-icons')
+    compile project(':react-native-video')
+    compile project(':react-native-maps')
+    implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.google.guava:guava:25.0-android'
     implementation project(':react-native-gesture-handler')
     implementation project(':react-native-video')
